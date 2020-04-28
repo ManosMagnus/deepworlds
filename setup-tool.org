@@ -1,4 +1,7 @@
-* General instructions
+* General
+  
+  Setup tools is a command line wizard in order to create
+  new examples or easily use the existing ones. 
 
   Current structure is:
   - ./examples
@@ -8,21 +11,21 @@
   - Every <specific-example> should have a description file.
     - Should be either on a markup language or simple text.
   - Every <specific-example> should have a requirement.txt
-    - This should have only the imported libraries, anything else
+    - This should have only the imported libraries, anything else.
 
 * Interface design   
   
   Generally, the deepworlds setup tool is going to be like a 
-  command line tools. Users will use it as an out-of-box tool
-  in order to create new worlds or use the existing ones.
+  common command line tool. Users will use it as an out-of-box
+  wizard in order to create new worlds or use the existing ones.
  
   Consequently, every <specific-example> might have different 
-  worlds or even different solution (supervisor, agent, robots).
-  It is essential that the deepworlds setup tools knows
-  about those different aspects of every problem. As result, every 
+  worlds or even different solutions (supervisor, agent, robots).
+  It is essential that the deepworlds setup tool knows those 
+  different aspects of every problem. As result, every 
   <specific-example> should have a formated string that can be 
-  interpreted by the setup tools. General, information should be 
-  included in this string.
+  interpreted by the setup tools. This string should be in 
+  JSON format or even in python dictionary.
   
   + Name 
   + Path
@@ -44,8 +47,16 @@
   + (optional) Other
       
   This information should be easily accessible by the developers
-  and also by the user. Developer should have the option to add
-  those information when they are about to start a project. On 
+  and also by the user. Developers should have the option to add
+  those information when they are about to start a project.
+  This could be happen with a command line wizard. On 
   the other hand, user should have the option to "scroll" on 
-  those information in order to choose which 
+  those information in order to choose which fits better to they 
+  case. In addition, user should have the ability to start from 
+  a template world. This mean that in the deepworlds repository 
+  should be added also another directory named as templates 
+
+  The difference between templates and examples is that templates 
+  provides only a basic code structure for a fresh project. Examples 
+  are complete solutions of problems.
   
