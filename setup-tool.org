@@ -27,24 +27,24 @@
   interpreted by the setup tools. This string should be in 
   JSON format or even in python dictionary.
   
-  + Name 
-  + Path
-  + Short description
-  + Long Description
-  + Requirements (or the path only)
-  + Authors 
+  * Name 
+  * Path
+  * Short description
+  * Long Description (Optional)
+  * Requirements (or the path only)
+  * Authors 
     + Name
     + Email
     + (optional) Github Account 
-  + Webots version
-  + Deebots version
-  + Worlds 
-  + Supervisors-Robots (array or dice)
-  + (optional) Framework which is used
+  * Webots version
+  * Deebots version
+  * Worlds 
+  * Supervisors-Robots (array or dice)
+  * (optional) Framework which is used
     + Version of the framework 
-  + (optional) Future Work 
-  + (optional) Related papers 
-  + (optional) Other
+  * (optional) Future Work 
+  * (optional) Related papers 
+  * (optional) Other
       
   This information should be easily accessible by the developers
   and also by the user. Developers should have the option to add
