@@ -7,7 +7,7 @@ from deepbots.supervisor.controllers.supervisor_emitter_receiver import \
     SupervisorCSV
 from deepbots.supervisor.wrappers.keyboard_printer import KeyboardPrinter
 from deepbots.supervisor.wrappers.tensorboard_wrapper import TensorboardLogger
-from models.networks import DDPG
+from models.ddpg_v1.networks import DDPG
 
 OBSERVATION_SPACE = 10
 ACTION_SPACE = 2
