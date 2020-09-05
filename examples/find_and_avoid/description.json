@@ -1,18 +1,18 @@
 {
     "title": "Find ball and avoid boxes",
-    "short_desc": "An e-puck agent wondering around trying to avoid boxes with its ultimate goal to find a ball",
+    "short_desc": "An e-puck agent wondering around trying to avoid boxes with its ultimate goal to find a ball.",
     "long_desc": "",
     "authors" :[
         {
             "name": "aidudezzz",
-            "id" : "aidudezzz"
+            "id" : "aidudezzz",
             "email": "deepbots@protonmail.com",
             "github" : "https://github.com/aidudezzz",
             "website": ""
         }
     ],
-    "webots_version": "",
-    "deepbots_version": "",
+    "webots_version": "R2020b-rev1",
+    "deepbots_version": "v0.1.1",
     "worlds" : [
         {
             "title": "Small World",
@@ -25,10 +25,13 @@
         {
             "title" : "DDPGv1",
             "id" : "ddpg_v1",
-            "desc": "Deep Deterministic Policy Gradience (DDPG)"
-            "author" : "aidudezzz"
+            "desc": "Deep Deterministic Policy Gradience (DDPG)",
+            "path" : "./controllers/supervisor/models/ddpg_v1/networks.py",
+            "author" : "aidudezzz",
             "papers" : ["https://arxiv.org/abs/1509.02971"]
         }
-    ]
-    "related_papers" :[]
+    ],
+    "benchmarks" : "./controllers/supervisor/models/benchmarks.csv",
+    "related_papers" :[],
+    "others" : []
 }
